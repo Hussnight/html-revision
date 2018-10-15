@@ -6,4 +6,33 @@ $(document).ready(function()
         $('.nav-item').removeClass('active');
         $(this).addClass('active');
     });
-})
+
+
+   
+   var text = $('#texte').text().trim()
+   
+   $('#texte').text('');
+
+    for(let i = 0 ; i < text.length ; i++){
+
+       
+        setTimeout(function(){
+             console.log(text[i]);
+            $('#texte').append(text[i]);
+        }, 300 * i );
+        
+    }
+    
+   
+    
+    
+ })
+        
+
+    
+
+
+
+
+
+
